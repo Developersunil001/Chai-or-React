@@ -8,21 +8,21 @@ function App() {
   let addCount = () => {
     console.log("Added!")
     if (count < 10) {
-      setCount((addCount)=>addCount + 1);
+      setCount((addCount) => addCount + 1);
     }
   }
 
   let removeCount = () => {
-    console.log("removed!")
+    console.log("Removed!")
     if (count > 0) {
-      setCount((removeCount)=> removeCount - 1);
+      setCount((removeCount) => removeCount - 1);
     }
   }
 
   return (
     <>
       <h1>counter project {count}</h1>
-      <button onClick={addCount}>Add</button>         
+      <button onClick={addCount}>Add</button>
       <button onClick={removeCount}>Remove</button>
     </>
   )
