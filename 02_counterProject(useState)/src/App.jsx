@@ -7,16 +7,25 @@ function App() {
 
   let addCount = () => {
     console.log("Added!")
-    if (count < 10) {
-      setCount((addCount) => addCount + 1);
-    }
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+    setCount(prevCount => prevCount + 1);
+
+
+    // if (count < 20) {
+    //   setCount((addCount) => addCount + 1);
+    // }
   }
 
   let removeCount = () => {
     console.log("Removed!")
-    if (count > 0) {
-      setCount((removeCount) => removeCount - 1);
-    }
+    setCount((removeCount) => removeCount - 1)
+
+    // if (count > 0) {
+    //   setCount((removeCount) => removeCount - 1);
+    // }
   }
 
   return (
