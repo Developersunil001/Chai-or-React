@@ -1,0 +1,14 @@
+useLoaderData => isse use kr ke hum kisi bhi nav me ja skte hai jisse ki 
+data lag ni hota hai or nav pr hover krte hi data fetch ho hata hai.
+
+createBrowserRouter or createRoutesFromElements => yeah dono ek method hai jisko 
+use kr ke hum nesting kr skte hai .
+
+RouterProvider => yeah props leta hai bina props ke kaam nhi krta hai or isme route 
+pass krna padta hai
+
+Outlet ek method hai isko jab use krte hai jab hume header or footer ko change 
+nhi krna hota hai fixed rkhna ho jab use kiya jata hai
+
+isActive => ek method hai jisme humko yeah pta chlta hai ki
+kon si nav bar active hai
