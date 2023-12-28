@@ -1,0 +1,35 @@
+step-1 sbse phele ek folder banoo context name ka iske baar uske andr 
+ek UserContext.js ke name se ek file banoo or fir usme React.createContext name se method banoo
+
+step-2 ab ek new file banoo context folder ke andr UserContextProvider.jsx and 
+then ab sbse phle react or UserContext ko import karo iske baad 
+
+step-3 ab ek method banoo UserContextProvider ke name se iske baad call back function 
+banoo or uske andr as a prop children pass karo
+
+step-4 iske baad return ke andr fragments pass kro or uske UserContext.Provider pass karo
+or usme children pass karo
+
+step-5 ab return ke upar ek useState banoo user name ka or UserContext.Provider me as  value pass kr 
+do user or setUser but dhyan rhe jab bhi useState ki value pass krte hai toh curly braces {}
+me pass krte hai 
+
+step-6 now ab acces krne ke liye app.jsx me fragments ke andr call kro UserContextProvider ko 
+or uppar import automatically ho jayega 
+
+step-7 ek folder banoo components name ka or uske andr 2 file banoo 
+ek Login.jsx or dusri Profile.jsx name ki
+
+step-8 login.. login me data send krte hai 
+sbse phele import karo {useState,useContext} ko then UserContext ko 
+
+step-9 iske baad input tag lo or username,password,value or onChange value pass karo or button banoo
+iske baad useState banoo username or passsword ka 
+
+step-10 iske baad {setUser} pass karo useContext(UserContext) ke andr 
+
+step-11 ab ke variable baoo {handlesubmit} ke name ka or uske andr call back
+function ke andr (e) value pass karo or e.preventDefault method pass kro or 
+jisse ki page refresh na ho or uske andr setUser pass kro or usme {username,password} pass kro
+
+
