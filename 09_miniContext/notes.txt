@@ -1,3 +1,7 @@
+Note: agr koi bhi file me (.js) likh rhe hai toh usme koi bhi value return nahi krenge
+or agr (.jsx) likh rhe hai toh usme return krenege koi bhi value
+
+
 step-1 sbse phele ek folder banoo context name ka iske baar uske andr 
 ek UserContext.js ke name se ek file banoo or fir usme React.createContext name se method banoo
 
@@ -39,5 +43,5 @@ phir return ko hata do or if condition ke andr condition do ki agr user exist na
 toh return kr do div ke andr pls login 
 or agr user exist krta hai toh return kr do div me welcome likh do or currly braces ke andr 
 {user.username}
- 
+
 
