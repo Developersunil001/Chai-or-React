@@ -32,4 +32,12 @@ step-11 ab ke variable baoo {handlesubmit} ke name ka or uske andr call back
 function ke andr (e) value pass karo or e.preventDefault method pass kro or 
 jisse ki page refresh na ho or uske andr setUser pass kro or usme {username,password} pass kro
 
+step-12 isme profile page banega 
+sbse phele react , useContext , UserContext ko import karo 
+iske baad bss {user} ko pass karo useContext(UserContext) iske andr
+phir return ko hata do or if condition ke andr condition do ki agr user exist nahi krta hai (!user)
+toh return kr do div ke andr pls login 
+or agr user exist krta hai toh return kr do div me welcome likh do or currly braces ke andr 
+{user.username}
+ 
 
