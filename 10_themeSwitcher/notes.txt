@@ -1,0 +1,46 @@
+step-1 import karo {useContext,createContext} ko 
+
+step-2 phir ek variable banoo themeContext name ka or export kr do usse createContext ke sath
+or createContext ek andr ek object banoo or uske andr 3 method banoo 
+themeMode,darkTheme,lightTheme
+
+step-3 ab export ke sath ek variable banoo themeProvider ke name ka or themeContext.Provider 
+laga kr export kr do
+
+step-4 ek function banoo useTheme name ka then ab useContext me pass kr do themeContext ko
+or sath hi sath export kr do usse default ke sath
+
+step-5 ab app.jsx me themeProvider se jsx ko wrap kr do jisse acces mile sake and then
+value provide kr do {themeMode,darkTheme,lightTheme} 
+
+step-6 ab ek useState banoo themeMode name ka or useState ke andr bydefault lightTheme
+de do
+
+step-7 ab ek method banoo or name same hone chiye jo value me diye the jsx ke andr 
+darkMode or lightMode or usko pass kr do setThemeMode ke andr like dark or light dono ko
+
+step-8 ab actual me kese theme changer kese bnta hai js me 
+
+1. useEffect lo 
+
+2. querySelector lo or (html) ko select kro phir classList me se remove kr do 
+("dark","light") ko 
+
+3. ab phir se querySelector lo or (html) ko select kro phir classList me se add kr do 
+(themeMode) ko 
+
+4. dependencies me themeMode pass kr do
+
+step-9 ek component banoo uske andr do file banoo 
+1. Card.jsx
+2. ThemeBtn.jsx or ab dono me code copy-paste kr do hitesh bhai ke github me se
+
+step-10 ThemeBtn wali file me onChange={onChangeBtn} kr do or checked={themeMode === "dark"}
+
+step-11 ab useTheme() ko call kr ke object ke andr {themeMode,darkMode,lightMode}
+call kro 
+
+step-12 ab onChangeBtn ke andr ek (e) value pass kro or darkModeStatus ek variable define 
+kro or equals to ke andr (e.currentTarget.checked) isko define kro 
+or if condition ke andr (darkModeStatus) ke andr (darkMode) de do or else me (lightMode)
+de do
