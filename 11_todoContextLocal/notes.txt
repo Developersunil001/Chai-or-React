@@ -1,0 +1,35 @@
+step-1 sbse phele src folder ke andr ek folder banoo contexts name ka or uske andr 
+ek TodoContexts.js name ki file banoo
+
+step-2 ab import kro {useContext or createContext} ko from react
+
+step-3 ab ek method banoo TodoContext ke name se or createContext ko define kr do or sath hi
+sath export kr do
+
+step-4 phir se ek method banoo useContext ke name se or fir callback function bhi hona chiye
+usme useContext ko pass kr do TodoContext ke sath ...mtlb isme batna padta hai ki hum kisi baat kr rhe hai
+
+step-5 phir ek export kro TodoProvider ke name se method TodoContext.provider 
+
+step-6 ab TodoContext ke andr object bna hoga {} ab uske andr todos name se method do 
+or array [] laga kr ab method me collon : laga kr todos ki properties do like... id,todos,completed
+
+step-7 ab contexts folder ke andr ek file banoo index.js or usme sare methods ko import kr do 
+{TodoContext, TodoProvider, useTodo}
+
+step-8 ab features likhna hai uska like addtodo,deletetodo,updatetodo,togglecomplete iske badd usme yeah properties do
+addTodo: (todo, id) => { }, deleteTodo: (id) => { },updateTodo: (todo, id) => { },togglecomplete: (id) => { } 
+
+step-9 ab app.jsx me return ke andr TodoProvider likh kr 
+value de do object ke andr {{todos, addTodo, updateTodo, togglecomplete, deleteTodo}}
+
+step-10 ab ui ka code copy kr lo hitesh bhai ke github se and paste kr do
+
+step-11 now ab ek useState banoo todo ke name se or yeah jo todo hai useState ke andr  
+vo object hai jo TodoContexts.js me rkha hua hai
+
+step-12 ab sari features ka code likhna hai atta hu fir likta 
+hu bazar se 
+
+
+json se structred preserved rehta hai
