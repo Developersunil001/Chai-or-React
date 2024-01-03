@@ -1,0 +1,86 @@
+step-1 sbse phele documentation se install krna hai
+1. npm install @reduxjs/toolkit
+2. npm install react-redux
+
+step-2 ab ek folder banoo src ke andr app name ka or uske andr ek store.js name ki
+file baoo 
+
+step-3 ab store.js me configureStore ko import kro @laga kr reduxjs/toolkit
+import { configureStore } from "@reduxjs/toolkit"
+
+step-4 ab export kr do configureStore ko ek store name ka method bana ke 
+
+step-5 ab ek folder banoo features ka name ka or uske andr ek todo name ka folder banoo
+or uske andr ek filer banoo todoSlice.js name ki
+
+step-6 ab import kro {createSlice , nanoid} ko from reduxtoolkit
+
+step-7 ab ek method banoo initialState name ki phir equals to laga kr 
+object {} banoo fir todos name do prop ka phir uske array [] banoo or fir uske 
+andr {} baoo or fir {id: 1, text: "Hello world"}
+
+step-8 phir export kro or sath hi sath ek method banoo todoSlice name ka phir 
+equals to (=) laga kr createSlice ko call kro or array ke andr object do or property de do
+name: "todo",
+initialState,
+reducers: {}   
+
+step-9 ab reducers ke andr properties atti hai or properties ke andr arrow function
+or addTodo ke andr arrowfunction ke andr state or action atta hai 
+
+## state is define to initialState bata hai ki todo ke andr kitne todolist hai
+## action is define to agr muje remove krna hai todo toh uske liye id lagegi toh
+isme kaam atta hai todo
+
+step-10 ab addTodo ke andr ek object banoo or todos ki properties de do 
+like id , text
+
+step-11 ab object ke bhar state ke liko ki state.todos.push(todo)
+
+step-12 ab removeTodo ki bari hai usme hame state or action pass krna hai 
+state.todos = state.todos.filter((todo) => todo.id !== action.payload)
+
+step-13 ab export kr do const ke {addTodo,removeTodo} ko todoSlice.reducers me se 
+or next ab export kr do  bydefault todoSlice.reducers ko
+
+step-14 store.js ke andr import kro todoReducers ko from features/todo/todoSlice
+
+step-15 ab ek components name ka folder banoo src ke andr uske andr 2 files baoo 
+## AddTodo.jsx
+## Todo.jsx
+
+step-15 ab AddTodo ke andr sbse phele import kro usedispatch ko or addTodo ko or useState ko
+
+step-16 ab ek useState banoo ---- const [input, setInput] = useState('')
+
+step-17 ab dispatch ko call kro -----   const dispatch = useDispatch()
+
+step-18 ab ek method banoo addTodoHandler name ka or callback function ke andr (e) event value pass kro
+or phir dispatch kr do addTodo ko input me ------ dispatch(addTodo(input))
+
+step-19 ab jan input ke andr todo list ban jaye tab usk input ko kahali kr do 
+----setInput(" ")
+
+step-20 ab todo.jsx ke andr import kro useDispatch,useSelector ko from "react-redux"
+import { useDispatch, useSelector } from 'react-redux';
+
+step-21 import kro removeTodo ko  ----- import { removeTodo } from "../features/todo/todoSlice
+
+step-22 ab function ke andr ek useSelector banoo or uske andr (state => state.todos)
+or usko save kr do todos ke andr ---->  const todos = useSelector(state => state.todos)
+
+step-23 ab useDispatch ko lao or use save kr do dispatch ke name se 
+----->  const dispatch = useDispatch()
+
+step-24 ab ek loop lagoo or todos ko map kr do or uske andr todo pass kr do
+ab li ke andr key de do or object ke andr todo.id likh do 
+ab hame todo ka text lene ke liye {todo.text} dena padega or 
+ek button banoo usme onClick button do or callback dunction laga kr dispatch ke do
+or dispatch ke sath removeTodo kr do or uske andr todo.id de do jisse todo ki id mil jaye
+or ui ke liye hitesh bhai se sampark kare 
+
+step-25 ab app.jsx me AddTodo or Todo.jsx ko import kro
+
+step-26 ab main.jsx me Provider se wrap kr do App.jsx ko or usme store pass kr do 
+curly braces me store hi pass kr dena or uppar import ke lena dono ko provider or store ko 
+
